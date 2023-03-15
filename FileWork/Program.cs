@@ -13,9 +13,9 @@ namespace FileWork
                 StreamReader text = new StreamReader(@"C:\Users\alexo\OneDrive\Рабочий стол\fileex\file.txt");
                 string[] array = text.ReadToEnd().Split('\n');
                 foreach (var i in array)
-            {
-                Console.WriteLine(i);
-            }
+                {
+                    Console.WriteLine(i);
+                }
             }
             catch (OutOfMemoryException e)
             {
